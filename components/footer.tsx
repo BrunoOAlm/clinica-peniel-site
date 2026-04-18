@@ -56,7 +56,7 @@ export function Footer() {
             {/* Social Links */}
             <div className="flex gap-3">
               <Link
-                href="https://www.instagram.com/clinicapeniel/"
+                href="https://www.instagram.com/clinicaodontologicapeniel/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors"
@@ -64,7 +64,7 @@ export function Footer() {
                 <Instagram className="h-5 w-5" />
               </Link>
               <Link
-                href="#"
+                href="https://www.facebook.com/pages/Peniel-Clínica-Odontológica/150065335175376"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Facebook className="h-5 w-5" />

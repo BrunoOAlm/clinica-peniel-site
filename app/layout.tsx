@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
@@ -42,17 +42,8 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${inter.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
-        export default function RootLayout({ children }) {
-          return (
-            <html lang="pt-BR">
-              <body>
-                {children}
-                <SpeedInsights />
-              </body>
-            </html>
-          )
-        }
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
