@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -42,6 +43,16 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        export default function RootLayout({ children }) {
+          return (
+            <html lang="pt-BR">
+              <body>
+                {children}
+                <SpeedInsights />
+              </body>
+            </html>
+          )
+        }
       </body>
     </html>
   )
