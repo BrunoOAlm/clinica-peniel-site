@@ -126,7 +126,8 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                 <span className="text-primary-foreground/70 text-sm">
-                  (21) 2560-1535
+                 Olaria    (21) 2560-1535 - (21) 3258-8707
+                 Freguesia (21) 2426-0561 - (21) 3496-5590
                 </span>
               </li>
               <li className="flex items-center gap-3">
